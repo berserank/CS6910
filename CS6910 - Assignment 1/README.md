@@ -17,7 +17,6 @@ Please check the code for description of the implementation.
 
 # Question 4 - Hyperparameter Search
 
---------------------------------
 **Strategy**
 
 1. As grid search can be computationally intensive, I opted not to use this method. Instead, I tried random search as some articles suggested it was a good alternative, and it did indeed find some promising models. However, many of the models generated through this method had low accuracy. 

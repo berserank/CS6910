@@ -3,9 +3,17 @@ In this assignment you need to implement a feedforward neural network and write 
 tested using the Fashion-MNIST dataset. Specifically, given an input image (28 x 28 = 784
 pixels) from the Fashion-MNIST dataset, the network will be trained to classify the image into 1 of 10 classes.
 
+Code : https://colab.research.google.com/drive/1HEcqh1IquTaSn0VK2-FNe0B-X0b3d_J2#scrollTo=WqY1J3bULCQO&uniqifier=2
+
+Report : https://api.wandb.ai/links/berserank/p00ea7mu
+
 # Question 1 - Plotting each class in fashion-MNIST
 
+Please check the code/report for the plots.
+
 # Question 2,3 - Implementation
+
+Please check the code for description of the implementation. 
 
 # Question 4 - Hyperparameter Search
 
@@ -39,11 +47,45 @@ pixels) from the Fashion-MNIST dataset, the network will be trained to classify 
 
 # Question 5 - Best Accuracy
 
+
+A best accuracy of 88.88% was obtained on Validation data. Respective hyper-parameters are given below. 
+
+```
+*   Epochs = 10
+*   Hidden layers = [64,64,64]
+*   Batch Size = 32
+*   Activation Function for hidden layers = Leaky ReLU
+*   Optimiser = Nadam
+*   Learning rate = 1e-3
+*   Weight decay = 0
+*   Loss = Cross Entropy
+*   Weight Initialisation = Xavier
+*   Validation Accuracy = 88.88%
+
+```
+
 # Question 6 - Parellel co-ordinates plot
+
+Please check the report for my analysis of the Parellel co-ordinates plot. 
+
 
 # Question 7 - Confusion Matrix
 
+1. The model exhibited exceptional accuracy for the labels : Trouser, Sandal, Bag, and Ankle boot, suggesting its ability to effectively differentiate between these labels and the others due to the highly distinguishable nature of their respective images.
+
+2. In contrast, the model experienced a slightly higher level of confusion between T-shirt, shirt, coat and pull-over due to the relatively subtle differences in their corresponding images.
+
 # Question 8 - MSE vs CE
+
+In theory, CE loss is typically used for classification tasks where the output of the model is a probability distribution over a set of classes . CE loss punishes the difference more than MSE loss as the goal is to minimize the difference between the predicted probability distribution and the true probability distribution of the labels. In contrast, MSE loss is typically used for regression tasks where the goal is to minimise the difference between the predicted and true values.
+
+I performed a Bayesian Sweep over the hyper-parameters by fixing loss as MSE. These were the plots I obtained. On Average, clearly MSE loss was performing poorly than CE loss. Out of the 61 models tested only 3 were above 80% accuracy, but the validation loss was going as low as 0.02.
+
+So, I picked the best model and changed its loss function to cross-entropy to compare it with the MSE model. 
+
+After checking both models' losses and accuracy, I found out that even though the mean squared error (MSE) initially seemed better with a lower loss, it actually had lower accuracy than the other model.This means model isn't able to learn despite showing low loss and MSE loss wasn't harsh on less accurate outputs
+ As expected, clearly CE was punishing the output more than MSE, which is desired in a classification task
+
 
 # Question 10 - MNIST Dataset
 

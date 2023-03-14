@@ -54,6 +54,8 @@ pixels) from the Fashion-MNIST dataset, the network will be trained to classify 
 
 Finally, the top-performing models with these parameters were selected for testing on the MNIST dataset. The three architectures selected were the ones that showed the best performance in the class of their respective activation functions.
 
+Best accuracy obtained on MNIST Test data was 97.42%
+
 | | Architechture 1 | Architechture 2 | Architechture 3|
 |----------|----------|----------|----------|
 | Epochs | 10 | 10 | 10 |

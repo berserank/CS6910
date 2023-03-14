@@ -18,11 +18,12 @@ pixels) from the Fashion-MNIST dataset, the network will be trained to classify 
 
 3. To find the best fit, I opted bayesian search. As bayesian sweep can incorporate prior knowledge about the hyperparameters, it can improve the efficiency of the optimization process and give me the best fit in less runs.
 
-4. I have performed two sets of searches. I have attached results of all three searches in separate run sets below 
+4. I have performed two sets of searches.
 
->-A Random and a Bayesian sweep of ~90 runs each with the configurations given in the question
+>A Random and a Bayesian sweep of ~90 runs each with the configurations given in the question
 
->-A Bayesian search of ~70 runs with the configurations below. Based on the results of previous experiments and my own analysis, I have discarded and added certain hyper-parameters that can report low and high accuracy respectively
+>A Bayesian search of ~70 runs with the configurations below. Based on the results of previous experiments and my own analysis, I have discarded and added certain hyper-parameters that can report low and high accuracy respectively
+
 ```
 - number of epochs: 10
 - number of hidden layers:  3

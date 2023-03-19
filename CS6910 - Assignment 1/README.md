@@ -113,7 +113,33 @@ Best accuracy obtained on MNIST Test data was 97.42%
 | Accuracy on MNIST Test data| 96.85 | 97.42| 97.07 |
 
 
+# Code Specifications
 
+Please use the following arguments to check the code. Long opts are used as given, but I had to choose different variables for short opts as I have implemented my train.py using `getopt.getopt`
+
+I set the default hyperparameters to the values that has given me the best validation accuracy.
+### Arguments 
+
+>>>| Name | Default Value | Description |
+| :---: | :-------------: | :----------- |
+| `-f`, `--wandb_project` | A1 | Project name used to track experiments in Weights & Biases dashboard |
+| `-g`, `--wandb_entity` | Aditya Nanda Kishore  | Wandb Entity used to track experiments in the Weights & Biases dashboard. |
+| `-d`, `--dataset` | fashion_mnist | choices:  ["mnist", "fashion_mnist"] |
+| `-e`, `--epochs` | 10 |  Number of epochs to train neural network.|
+| `-b`, `--batch_size` | 32 | Batch size used to train neural network. | 
+| `-l`, `--loss` | cross_entropy | choices:  ["mean_squared_error", "cross_entropy"] |
+| `-o`, `--optimizer` | nadam | choices:  ["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"] | 
+| `-r`, `--learning_rate` | 1e-3 | Learning rate used to optimize model parameters | 
+| `-m`, `--momentum` | 0.9 | Momentum used by momentum and nag optimizers. |
+| `-i`, `--beta` | 0.9 | Beta used by rmsprop optimizer | 
+| `-j`, `--beta1` | 0.9 | Beta1 used by adam and nadam optimizers. | 
+| `-k`, `--beta2` | 0.99 | Beta2 used by adam and nadam optimizers. |
+| `-p`, `--epsilon` | 1e-6 | Epsilon used by optimizers. |
+| `-y`, `--weight_decay` | 0 | Weight decay used by optimizers. |
+| `-z`, `--weight_init` | Xavier | choices:  ["random", "Xavier"] | 
+| `-n`, `--num_layers` | 3 | Number of hidden layers used in feedforward neural network. | 
+| `-s`, `--hidden_size` | 64 | Number of hidden neurons in a feedforward layer. |
+| `-a`, `--activation` | leaky relu | choices:  ["identity", "sigmoid", "tanh", "ReLU"] |
 
 
 

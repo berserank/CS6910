@@ -3,9 +3,9 @@ In this assignment you need to implement a feedforward neural network and write 
 tested using the Fashion-MNIST dataset. Specifically, given an input image (28 x 28 = 784
 pixels) from the Fashion-MNIST dataset, the network will be trained to classify the image into 1 of 10 classes.
 
-Code : https://colab.research.google.com/drive/1HEcqh1IquTaSn0VK2-FNe0B-X0b3d_J2#scrollTo=WqY1J3bULCQO&uniqifier=2
+Code : [Colab file](https://colab.research.google.com/drive/1HEcqh1IquTaSn0VK2-FNe0B-X0b3d_J2#scrollTo=WqY1J3bULCQO&uniqifier=2)
 
-Report : https://api.wandb.ai/links/berserank/p00ea7mu
+Report : [Wandb Report](https://api.wandb.ai/links/berserank/p00ea7mu)
 
 # Question 1 - Plotting each class in fashion-MNIST
 
@@ -14,6 +14,7 @@ Please check the code/report for the plots.
 # Question 2,3 - Implementation
 
 Please check the code for description of the implementation. 
+[A1.ipynb](https://github.com/berserank/CS6910/blob/main/CS6910%20-%20Assignment%201/A1.ipynb)
 
 # Question 4 - Hyperparameter Search
 

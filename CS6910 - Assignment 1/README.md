@@ -120,7 +120,7 @@ Please use the following arguments to check the code. Long opts are used as give
 I set the default hyperparameters to the values that has given me the best validation accuracy.
 ### Arguments 
 
->>>| Name | Default Value | Description |
+| Name | Default Value | Description |
 | :---: | :-------------: | :----------- |
 | `-f`, `--wandb_project` | A1 | Project name used to track experiments in Weights & Biases dashboard |
 | `-g`, `--wandb_entity` | Aditya Nanda Kishore  | Wandb Entity used to track experiments in the Weights & Biases dashboard. |

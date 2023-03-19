@@ -13,7 +13,7 @@ Please check the code/report for the plots.
 
 # Question 2,3 - Implementation
 
-Please check the code for description of the implementation. 
+Please check the code for description of the implementation: 
 [A1.ipynb](https://github.com/berserank/CS6910/blob/main/CS6910%20-%20Assignment%201/A1.ipynb)
 
 # Question 4 - Hyperparameter Search
